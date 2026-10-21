@@ -1,0 +1,15 @@
+[Unit]
+Description=Smart Dehumidifier HTTP & Actuator Service
+After=network.target
+
+[Service]
+Type=simple
+User=ivanhung
+ExecStart=/usr/local/bin/smart_dehumidifier
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "raspberrypi,5-model-b", "brcm,bcm2712";
+
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            dehum_node: dehum_actuator {
+                compatible = "myorg,dehum-actuator";
+                // 樹莓派 5: 舵機連 Pin 18, 感測器連 Pin 23
+                servo-gpios  = <&rp1_gpio 18 0>;
+                sensor-gpios = <&rp1_gpio 23 0>;
+                status = "okay";
+            };
+        };
+    };
+};

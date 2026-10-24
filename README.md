@@ -6,7 +6,7 @@ The project serves to monitor the humidity of my bedroom and automatically turn 
 
 ---
 
-## What's New in v3.0 (Kernel Event-Driven Overhaul)
+## What's New in v3.0
 
 1. **Native Device Tree Auto-Probing**:
    - Replaced manual `insmod` steps with custom Device Tree Overlays (`.dtbo`). The actuator platform device is automatically created and probed at boot time by the firmware bootloader.
@@ -24,7 +24,7 @@ The project serves to monitor the humidity of my bedroom and automatically turn 
 
 ## System Showcase & Visual Demonstration
 
-| Physical Actuator & Sensing | Real-Time Kernel Event Logs | iOS Telemetry Monitor |
+| Physical Actuator & Sensing | Real-Time Kernel Event Logs | iOS Monitor App |
 | :---: | :---: | :---: |
 |  <img src="assets/hardware_setup.jfif" width="50%"/> | <img src="assets/real_time_shell_log.png"/> | <img src="assets/app_standby.jfif" width="50%"/> |
 

@@ -22,6 +22,18 @@ The project serves to monitor the humidity of my bedroom and automatically turn 
 
 ---
 
+## 📸 System Showcase & Visual Demonstration
+
+| Physical Actuator & Sensing | Real-Time Kernel Event Logs | iOS Telemetry Monitor |
+| :---: | :---: | :---: |
+|  <img src="assets/hardware_setup.jfif" width="50%"/> | <img src="assets/real_time_shell_log.png"/> | <img src="assets/app_standby.jfif" width="50%"/> |
+
+> 📖 **Detailed Guides & Further Reading**:
+> - 🔌 For hardware wiring, duct-tape mounting, and sensor calibration, see the [Hardware Setup Guide](docs/HARDWARE_SETUP.md).
+> - 📱 For full telemetry screenshots, operating states, and kernel push log details, see the [System Showcase](docs/SYSTEM_SHOWCASE.md).
+
+---
+
 ## System Architecture
 - **Hardware Layer**: Raspberry Pi 5 (RP1 I/O), SHT30 I2C sensor, MG90S servo, LM393 light sensor.
 - **Linux Kernel Space**: SHT3x Driver (hwmon subsystem), Device Tree Overlays (dehum-actuator.dtbo & sht3x.dtbo), dehum_cdev.ko (hrtimer 1Hz, 25-sample debounce, wait_queue).

@@ -42,5 +42,8 @@ The peripherals are connected according to the following mapping:
 
 The device is mounted on the dehumidifier panel using directly duct tape.
 
-![Hardware Assembly](../assets/hardware_setup.jpg)
-*Figure 1: Non-invasive servo push mechanism and optical probe secured with duct tape.*
+<figure>
+    <img src="/assets/hardware_setup.jfif" width="500" height="800">
+</figure>
+Figure 1: Non-invasive servo push mechanism and optical probe secured with duct tape.
+

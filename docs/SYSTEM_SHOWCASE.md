@@ -8,9 +8,9 @@ This document demonstrates the runtime performance of the Smart Dehumidifier sys
 
 The backend runs as a continuous systemd service (`smart-dehum.service`). Unlike traditional user-space polling, the system uses kernel `hrtimer` and `epoll_wait()`, drawing **0.0% CPU** during idle waiting periods.
 <figure>
-  <img src="/assets/real_time_shell_log.png" width="500" height="400">
+  <img src="/assets/real_time_shell_log.png" width="600" height="500">
 </figure>  
-*Figure 1: System journal (`journalctl -u smart-dehum.service -f`) showcasing 1Hz kernel event push and 5-second ODE/MLP decision cycles.*
+Figure 1: System journal (`journalctl -u smart-dehum.service -f`) showcasing 1Hz kernel event push and 5-second ODE/MLP decision cycles.
 
 ---
 
